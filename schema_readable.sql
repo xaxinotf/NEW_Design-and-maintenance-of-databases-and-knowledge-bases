@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS public.artist (
     id bigint PRIMARY KEY DEFAULT nextval('public.artist_id_seq'),
     display_name text NOT NULL,
     country text,
-    artist_type text NOT NULL CHECK (artist_type IN ('solo','band')), -- ← Якщо залишаємо підтипи solo_artist/band
+     -- ← видалено
     created_at timestamptz DEFAULT now()
 );
 
